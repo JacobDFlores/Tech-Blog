@@ -1,14 +1,25 @@
 <div class="text-center">
   <h2>{{name}}</h2>
-  <p>{{{get_emoji}}}</p>
   <p>{{description}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  <p>
-    <span for="img" aria-label="money">💲</span>
-    <span class="dollar-amount">{{format_amount needed_funding}}</span>
-    needed
-  </p>
-  <p>
-    <button class="btn btn-primary">Fund this Project!</button>
-  </p>
+  <div class="comments-container">
+        <div class="add-comment-container">
+          <form class="comment-box">
+            <label for="uComment">Add a comment!</label>
+            <input type="text" id="uComment" name="uComment"><br><br>
+            <button type="submit">Post</button>
+          </form>
+        </div>
+        <div>
+
+
+
+          {{!-- going to add comments here! --}}
+
+
+        </div>
+  </div>
 </div>
+
+<script src="/js/blog.js"></script>
+
