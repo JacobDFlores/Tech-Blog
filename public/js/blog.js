@@ -1,12 +1,12 @@
 const url = window.location.toString().split("/");
 const blog_id = (url[url.length - 1]);
 let blog = parseInt(blog_id);
+
 const newFormHandler = async (event) => {
     event.preventDefault();
-  
+
     const description = document.getElementById('uComment').value.trim()
 
-    console.log(blog)
     const payload = {
       description: description,
       project_id: blog
@@ -33,3 +33,5 @@ const newFormHandler = async (event) => {
   document
   .querySelector('.comment-box')
   .addEventListener('submit', newFormHandler);
+
+  
